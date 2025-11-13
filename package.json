@@ -1,26 +1,55 @@
 {
-  "name": "my-saas-project",
+  "name": "velvet",
   "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "eslint"
+  "description": "AI-powered automated code review CLI",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "velvet": "./dist/cli.js"
   },
+  "scripts": {
+    "dev": "tsx src/cli.ts",
+    "build": "tsc",
+    "start": "node dist/cli.js",
+    "clean": "rm -rf dist",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:ui": "vitest --ui",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "type-check": "tsc --noEmit"
+  },
+  "keywords": [
+    "cli",
+    "code-review",
+    "ai",
+    "automation"
+  ],
   "dependencies": {
-    "react": "19.2.0",
-    "react-dom": "19.2.0",
-    "next": "16.0.2"
+    "@anthropic-ai/sdk": "^0.68.0",
+    "@octokit/rest": "^22.0.1",
+    "@supabase/supabase-js": "^2.81.1",
+    "chalk": "^4.1.2",
+    "cli-highlight": "^2.1.11",
+    "commander": "^12.1.0",
+    "dotenv": "^16.4.7",
+    "inquirer": "^9.3.8",
+    "micromatch": "^4.0.8",
+    "ora": "^5.4.1",
+    "simple-git": "^3.30.0",
+    "zod": "^4.1.12"
   },
   "devDependencies": {
-    "typescript": "^5",
+    "@types/inquirer": "^9.0.9",
+    "@types/micromatch": "^4.0.10",
     "@types/node": "^20",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
-    "@tailwindcss/postcss": "^4",
-    "tailwindcss": "^4",
+    "@vitest/ui": "^4.0.8",
     "eslint": "^9",
-    "eslint-config-next": "16.0.2"
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-prettier": "^5.5.4",
+    "prettier": "^3.6.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5",
+    "vitest": "^4.0.8"
   }
 }
