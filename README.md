@@ -1,18 +1,18 @@
-# 🤖 Code Review AI
+# Code Review AI
 
 Automated code review CLI tool with a powerful DSL for defining custom review rules. Inspired by Danger.js but designed specifically for code review automation in any CI/CD environment.
 
-## ✨ Features
+## Features
 
-- **🎯 Flexible Rule System** - Write review rules in TypeScript with a simple, powerful DSL
-- **🔍 Git Integration** - Analyze diffs, commits, and file changes
-- **🐙 GitHub Support** - Post review comments directly to PRs
-- **🚀 CI/CD Ready** - Works with GitHub Actions, GitLab CI, CircleCI, Jenkins, and more
-- **📝 Local Testing** - Test your rules locally before pushing
-- **⚡ Fast & Lightweight** - Minimal dependencies, quick execution
-- **🎨 Customizable** - Create rules that match your team's workflow
+- ** Flexible Rule System** - Write review rules in TypeScript with a simple, powerful DSL
+- ** Git Integration** - Analyze diffs, commits, and file changes
+- ** GitHub Support** - Post review comments directly to PRs
+- ** CI/CD Ready** - Works with GitHub Actions, GitLab CI, CircleCI, Jenkins, and more
+- ** Local Testing** - Test your rules locally before pushing
+- ** Fast & Lightweight** - Minimal dependencies, quick execution
+- ** Customizable** - Create rules that match your team's workflow
 
-## 🚀 Quick Start
+##  Quick Start
 
 ### 1. Install
 
